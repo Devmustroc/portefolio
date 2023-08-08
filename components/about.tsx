@@ -15,6 +15,9 @@ export default function About() {
                             opacity: 1,
                             y: 0,
                         }}
+                        transition={{
+                            delay: 0.175,
+                        }}
         >
                 <SectionHeading> About me </SectionHeading>
                 <p className="mb-3">
@@ -39,5 +42,6 @@ export default function About() {
                     video games, making music, and have fun time with my kids
                 </p>
         </motion.section>
+
     )
 }
