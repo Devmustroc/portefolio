@@ -1,11 +1,22 @@
+'use client';
+
 import React from 'react'
 import SectionHeading from "@/components/section-heading";
+import { motion } from 'framer-motion';
 
 export default function About() {
     return (
-        <section className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+        <motion.section className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+                        initial={{
+                            y: 100,
+                            opacity: 0,
+                        }}
+                        animate={{
+                            opacity: 1,
+                            y: 0,
+                        }}
         >
-                <SectionHeading />
+                <SectionHeading> About me </SectionHeading>
                 <p className="mb-3">
                     After many years working in {" "}
                     <span className="font-medium">Tourism & Hotel</span>, I decided to pursue my
@@ -27,6 +38,6 @@ export default function About() {
                     <span className="italic">When I'm not coding</span>, I enjoy playing
                     video games, making music, and have fun time with my kids
                 </p>
-        </section>
+        </motion.section>
     )
 }
