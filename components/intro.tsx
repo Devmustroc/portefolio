@@ -60,7 +60,7 @@ export default function Intro() {
                 </motion.p>
             </div>
             <motion.div className="flex flex-col sm:flex-row
-            items-center justify-centergap-2 px-4 font-medium"
+            items-center justify-center gap-3 px-4 font-medium"
             initial={{
                 opacity: 0,
                 y: 100,
@@ -72,16 +72,20 @@ export default function Intro() {
             transition={{
                 delay: 0.1,
             }}>
-                <Link href="#contact" className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full" >
-                    Contact me <BsArrowRight className="inline-block w-6 h-6 ml-2" />
+                <Link href="#contact" className=" group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none
+                focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">
+                    Contact me <BsArrowRight className="inline-block w-6 h-6 ml-2 opacity-70 group-hover:translate-x-1" />
                 </Link>
-                <a href=""
-                   className="bg-white px-7 py-3 flex items-center gap-2 rounded-full"
-                >Download CV <HiDownload /></a>
-                <a href="" className="bg-white text-gray-700 px-7 py-3 flex items-center gap-2 rounded-full text-[1.35rem]">
+                <a href="/cv.pdf" download={true}
+                   className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none
+                focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+                >Download CV <HiDownload className="opacity-60 group-hover:translate-y-1"/></a>
+                <a href="https://www.linkedin.com/in/elmustapha-abourar/" target="_blank" className="bg-white text-gray-700 px-7 py-3 flex items-center gap-2 rounded-full text-[1.35rem] outline-none
+                focus:scale-110 hover:scale-110 hover:text-white hover:bg-gray-950 active:scale-105 transition border border-black/10">
                     <BsLinkedin />
                 </a>
-                <a href="" className="bg-white text-gray-700 px-7 py-3 flex items-center gap-2 rounded-full text-[1.35rem]">
+                <a href="https://github.com/Devmustroc" target="_blank" className="bg-white text-gray-700 px-7 py-3 flex items-center gap-2 rounded-full text-[1.35rem] outline-none
+                focus:scale-[1.15] hover:scale-[1.15] hover:text-white hover:bg-gray-950 active:scale-105 transition border border-black/10">
                     <FaGithub />
                 </a>
             </motion.div>
