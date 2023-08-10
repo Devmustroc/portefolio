@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import skinshine from "@/public/skinshine.png";
+import bashTerminal from "@/public/bashTermina.png";
+import airHBNB from "@/public/airHBNB.jpg";
 
 export const links = [
     {
@@ -35,52 +35,52 @@ export const links = [
 
 export const experiencesData = [
     {
-        title: "Graduated bootcamp",
-        location: "Miami, FL",
+        title: "Graduated FullStack Developer",
+        location: "Lille France",
         description:
-            "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+            "I graduated after 2 years of studying.I build strong IT knowledge and skills. I also learned how to work in a team.",
         icon: React.createElement(LuGraduationCap),
-        date: "2019",
+        date: "2022-2024",
     },
     {
-        title: "Front-End Developer",
-        location: "Orlando, FL",
+        title: "OS Developer from Apple Foundation",
+        location: "Lille France",
         description:
-            "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+            "I trained for 2 month to become an OS developer and I learned Swift and SwiftUI.",
         icon: React.createElement(CgWorkAlt),
-        date: "2019 - 2021",
+        date: "2022",
     },
     {
-        title: "Full-Stack Developer",
-        location: "Houston, TX",
+        title: "Digital Marketing Training",
+        location: "Lille France",
         description:
-            "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+            "I trained for 3 month to become a digital marketer and I learned how to use Google Ads and Google Analytics.",
         icon: React.createElement(FaReact),
-        date: "2021 - present",
+        date: "2022",
     },
 ] as const;
 
 export const projectsData = [
     {
-        title: "CorpComment",
+        title: "E-commerce SkinShine",
         description:
-            "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-        tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-        imageUrl: corpcommentImg,
+            "I build for my project for the first year of my studies. It's an e-commerce website for a cosmetic brand.",
+        tags: ["Angular", "TypeScript", "Node", "NX", "Npm", "MonogDB"],
+        imageUrl: skinshine,
     },
     {
-        title: "rmtDev",
+        title: "Simple Shell in C",
         description:
-            "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-        imageUrl: rmtdevImg,
+            "With my colleague we build a simple shell in C. It's a school project for the first year of the fundamentals of IT.",
+        tags: ["C", "Linux", "Vi", "GCC", "GNU", "Makefile"],
+        imageUrl: bashTerminal,
     },
     {
-        title: "Word Analytics",
+        title: "Airbnb Clone",
         description:
-            "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-        imageUrl: wordanalyticsImg,
+            "for the project of the first year of my studies, I build an Airbnb clone. It's a website where you can rent a house or rent your house.",
+        tags: ["HTML", "CSS", "MySQL", "Python", "Flask", "Jinja2", "JavaScript", "C"],
+        imageUrl: airHBNB,
     },
 ] as const;
 
@@ -91,7 +91,9 @@ export const skillsData = [
     "JavaScript",
     "Python",
     "C",
+    "linux",
     "React",
+    "linux",
     "Next.js",
     "Node.js",
     "Git",
@@ -101,4 +103,8 @@ export const skillsData = [
     "Express",
     "Python",
     "Flask",
+    "SQL",
+    "mySQL",
+    "PostgreSQL",
+    "Nginx",
 ] as const;

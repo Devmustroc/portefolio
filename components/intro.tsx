@@ -9,9 +9,11 @@ import {BsArrowRight, BsLinkedin} from "react-icons/bs";
 import {HiDownload} from "react-icons/hi";
 import { FaGithub } from 'react-icons/fa';
 import {useSectionInView} from "@/lib/hooks";
+import {useActiveSectionContext} from "@/context/active-section-context";
 
 export default function Intro() {
     const { ref } = useSectionInView("Home", 0.5);
+    const { setActiveSection, setTimeOfLastClick } =  useActiveSectionContext();
     return (
         <section ref={ref} className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]" id="home">
             <div className="flex items-center justify-center">
@@ -75,7 +77,12 @@ export default function Intro() {
                 delay: 0.1,
             }}>
                 <Link href="#contact" className=" group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none
-                focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition">
+                focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+                onClick={() => {
+                    setActiveSection("Contact");
+                    setTimeOfLastClick(Date.now());
+                }}
+                >
                     Contact me <BsArrowRight className="inline-block w-6 h-6 ml-2 opacity-70 group-hover:translate-x-1" />
                 </Link>
                 <a href="/cv.pdf" download={true}
